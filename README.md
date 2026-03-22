@@ -436,14 +436,9 @@ Zero configuration, single file, no server process, ACID-compliant, and fully su
 
 ## Demo Video
 
-> **[Video link — to be added before submission]**
+> **https://www.loom.com/share/8de8b3a2ab804dd4af6d62b44f2e7d1b**
 
-Record a screen capture showing:
-1. The application starting and loading models
-2. The video playing with real-time bounding boxes and face IDs on screen
-3. The unique visitor counter incrementing as new faces appear
-4. The `events.log` file and `logs/entries/` folder updating live
-5. The SQLite DB being queried to show registered faces and events
+
 
 ---
 
