@@ -1,0 +1,17 @@
+{
+    "video_source": "videos/video_sample1.mp4",
+    "detection_skip_frames": 2,
+    "similarity_threshold": 0.45,
+    "exit_patience_frames": 40,
+    "yolo_model_path": "models/yolov8n-face.pt",
+    "insightface_model": "buffalo_l",
+    "database_path": "data/face_tracker.db",
+    "logs_dir": "logs",
+    "display_output": true,
+    "save_output_video": false,
+    "output_video_path": "output/output.mp4",
+    "min_face_size": 30,
+    "yolo_confidence": 0.45,
+    "yolo_iou": 0.45,
+    "rtsp_stream_url": ""
+}

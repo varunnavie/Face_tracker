@@ -1,0 +1,25 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Claude Code AI assistant files
+.claude/
+
+# Generated at runtime
+data/
+logs/
+logs_test/
+output/
+models/
+yolov8n.pt
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
