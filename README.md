@@ -25,8 +25,8 @@ A production-grade AI system that processes a video stream (or live RTSP camera 
 
 ```
 ┌─────────────────────┐
-│  Video File / RTSP  │
-│  Camera Stream      │
+│  Video File         │
+│                     │
 └────────┬────────────┘
          │  frame
          ▼
