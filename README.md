@@ -81,24 +81,23 @@ A production-grade AI system that processes a video stream (or live RTSP camera 
 
 ## Feature List
 
-1. **Real-time face detection** using YOLOv8n-face (dedicated face detection weights)
-2. **Stable multi-face tracking** via ByteTrack — assigns consistent track IDs across frames, handles occlusion
-3. **ArcFace identity embeddings** (512-d) via InsightFace `buffalo_l` model — SOTA recognition accuracy
-4. **Auto-registration** — any face not matching an existing embedding gets a new UUID and is stored in the DB
-5. **Re-identification** — when a previously registered person re-enters, they are recognised (not counted twice)
-6. **Entry event** fired exactly once per track appearance; includes cropped face image + timestamp
-7. **Exit event** fired after configurable patience period of absence; includes last-seen face crop
-8. **Unique visitor counter** — lifetime count stored in DB, never inflated by re-visits
-9. **SQLite database** — three tables: `faces` (embeddings + metadata), `events` (entry/exit log), `visitor_count`
-10. **`events.log`** — structured file log of every system event: registration, entry, exit, tracking, recognition
-11. **Cropped face images** saved under `logs/entries/YYYY-MM-DD/` and `logs/exits/YYYY-MM-DD/`
-12. **`config.json` driven** — all tunable parameters (skip frames, similarity threshold, patience, etc.) in one file
-13. **CLI overrides** — `--source` and `--config` flags for flexible deployment
-14. **RTSP support** — pass any `rtsp://...` URL as `--source` for live camera input
-15. **Live annotated display** — OpenCV window with bounding boxes, face IDs, visitor count HUD, FPS
-16. **Optional output video saving** — write annotated video to file via `save_output_video` config flag
-17. **Graceful shutdown** — remaining active tracks are flushed as exits when stream ends or user presses `q`
-18. **Modular, replaceable components** — each module is independently testable and swappable
+1. **Stable multi-face tracking** via ByteTrack — assigns consistent track IDs across frames, handles occlusion
+2. **ArcFace identity embeddings** (512-d) via InsightFace `buffalo_l` model — SOTA recognition accuracy
+3. **Auto-registration** — any face not matching an existing embedding gets a new UUID and is stored in the DB
+4. **Re-identification** — when a previously registered person re-enters, they are recognised (not counted twice)
+5. **Entry event** fired exactly once per track appearance; includes cropped face image + timestamp
+6. **Exit event** fired after configurable patience period of absence; includes last-seen face crop
+7. **Unique visitor counter** — lifetime count stored in DB, never inflated by re-visits
+8. **SQLite database** — three tables: `faces` (embeddings + metadata), `events` (entry/exit log), `visitor_count`
+9. **`events.log`** — structured file log of every system event: registration, entry, exit, tracking, recognition
+10. **Cropped face images** saved under `logs/entries/YYYY-MM-DD/` and `logs/exits/YYYY-MM-DD/`
+11. **`config.json` driven** — all tunable parameters (skip frames, similarity threshold, patience, etc.) in one file
+12. **CLI overrides** — `--source` and `--config` flags for flexible deployment
+13. **RTSP support** — pass any `rtsp://...` URL as `--source` for live camera input
+14. **Live annotated display** — OpenCV window with bounding boxes, face IDs, visitor count HUD, FPS
+15. **Optional output video saving** — write annotated video to file via `save_output_video` config flag
+16. **Graceful shutdown** — remaining active tracks are flushed as exits when stream ends or user presses `q`
+17. **Modular, replaceable components** — each module is independently testable and swappable
 
 ---
 
