@@ -112,7 +112,6 @@ A production-grade AI system that processes a video stream (or live RTSP camera 
 | Video I/O | OpenCV |
 | Configuration | JSON (`config.json`) |
 | Logging | Python `logging` module + filesystem |
-| Camera Input | Video file (dev) / RTSP stream (production) |
 
 ---
 
