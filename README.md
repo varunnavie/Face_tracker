@@ -93,11 +93,10 @@ A production-grade AI system that processes a video stream (or live RTSP camera 
 10. **Cropped face images** saved under `logs/entries/YYYY-MM-DD/` and `logs/exits/YYYY-MM-DD/`
 11. **`config.json` driven** — all tunable parameters (skip frames, similarity threshold, patience, etc.) in one file
 12. **CLI overrides** — `--source` and `--config` flags for flexible deployment
-13. **RTSP support** — pass any `rtsp://...` URL as `--source` for live camera input
-14. **Live annotated display** — OpenCV window with bounding boxes, face IDs, visitor count HUD, FPS
-15. **Optional output video saving** — write annotated video to file via `save_output_video` config flag
-16. **Graceful shutdown** — remaining active tracks are flushed as exits when stream ends or user presses `q`
-17. **Modular, replaceable components** — each module is independently testable and swappable
+13. **Live annotated display** — OpenCV window with bounding boxes, face IDs, visitor count HUD, FPS
+14. **Optional output video saving** — write annotated video to file via `save_output_video` config flag
+15. **Graceful shutdown** — remaining active tracks are flushed as exits when stream ends or user presses `q`
+16. **Modular, replaceable components** — each module is independently testable and swappable
 
 ---
 
