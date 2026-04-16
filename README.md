@@ -205,11 +205,6 @@ python main.py
 python main.py --source videos/record_20250620_183903.mp4
 ```
 
-### Run on a live RTSP stream (interview / production mode)
-
-```bash
-python main.py --source rtsp://username:password@192.168.1.100:554/stream
-```
 
 ### Use a custom config file
 
