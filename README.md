@@ -425,12 +425,3 @@ Zero configuration, single file, no server process, ACID-compliant, and fully su
 
 ---
 
-## Demo Video
-
-> **https://www.loom.com/share/8de8b3a2ab804dd4af6d62b44f2e7d1b**
-
-
-
----
-
-*This project is a part of a hackathon run by https://katomaran.com*
